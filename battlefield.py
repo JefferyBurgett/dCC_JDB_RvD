@@ -1,10 +1,11 @@
 from robot import Robot
 from dinosaur import Dinosaur
+import random
 
 class Battlefield:
     def __init__(self):
-        self.robot = Robot()
-        self.dinosaur = Dinosaur()
+        self.robot = Robot('Optimus Prime')
+        self.dinosaur = Dinosaur('Godzilla', (random.randrange(10,20)))
 
     def run_game(self):
         self.display_welcome()
